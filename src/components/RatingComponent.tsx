@@ -1,8 +1,6 @@
 import React from 'react';
-import { FunctionBody } from 'typescript';
 
 const RatingComponent = (props: { setSubmit: Function, setRating: Function }) => {
-
   return (
     <div>
         <h2>How did we do?</h2>

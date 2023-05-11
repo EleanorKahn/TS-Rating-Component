@@ -16,24 +16,14 @@ function App() {
   return (
     <div className="App">
       <div>
-
         {!submit 
-        
-        ?
-
-        <RatingComponent setSubmit={setSubmit} setRating={setRating} />
-
-        :
-
-        <ThankYouComponent rating={rating} />
-
+          ? <RatingComponent setSubmit={setSubmit} setRating={setRating} />
+          : <ThankYouComponent rating={rating} />
         }
-
       </div>
-
       <FooterComponent />
     </div>
   );
-}
+};
 
 export default App;
