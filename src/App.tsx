@@ -1,9 +1,14 @@
 import React, { useState } from 'react';
 import FooterComponent from './components/FooterComponent';
+import ThankYouComponent from './components/ThankYouComponent';
 import './css/App.css';
 
 function App() {
-  const [rating, setRating] = useState(5);
+  // interface rating {
+  //   rating: number;
+  // }
+
+  const [rating, setRating] = useState(0);
   const [submit, setSubmit] = useState(false);
 
   if (submit) {
@@ -33,11 +38,7 @@ function App() {
 
         :
 
-        <div>
-          <h2>You selected {rating} out of 5</h2>
-          <p>Thank you!</p>
-          <p>We appreciate you taking the time to give a rating. If you ever need more support, don&apos;t hesitate to get in touch!</p>
-        </div>
+        <ThankYouComponent rating={rating} />
 
         }
 
