@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
+import FooterComponent from './components/FooterComponent';
 import './css/App.css';
 
 function App() {
   const [rating, setRating] = useState(5);
   const [submit, setSubmit] = useState(false);
-
-  const ratingOptions = [1, 2, 3, 4, 5];
 
   if (submit) {
     console.log(`${rating}`);
@@ -41,13 +40,10 @@ function App() {
         </div>
 
         }
-        
+
       </div>
 
-      <footer className="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-        Coded by <a href="#">Eleanor</a>.
-      </footer>
+      <FooterComponent />
     </div>
   );
 }
