@@ -28,36 +28,65 @@ body {
 body .container {
     background: linear-gradient(var(--darkBlue), var(--veryDarkBlue));
     vertical-align: center;
+    padding: 1.75rem;
+    width: 375px;
+    border: 1px solid white;
+    border-radius: 30px;
 }
 
 p {
     color: var(--lightGrey);
+    line-height: 1.75;
 }
 
 h2 {
     color: var(--white);
 }
 
+button {
+    height: 2.25rem;
+    border-radius: 30px;
+    font-family: 'Overpass', 'sans-serif';
+    border: none;
+}
+
 /* Rating Component style */
+/* .star {
+    background-image: url('/public/images/icon-star.svg');
+    background-color: aliceblue;
+} */
+
+img {
+    padding-block: 1rem;
+    border: 1px solid var(--mediumGrey);
+}
 
 .rating-paragraph {
     color: var(--lightGrey);
+    margin-block-end: 1.75rem;
 }
 
 .rating-options {
     list-style-type: none;
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding-inline-start: 0px;
+    margin-block-end: 1.75rem;
 }
 
 .rating-options button {
     color: var(--lightGrey);
-    background-color: var(--mediumGrey);
+    background-color: var(--darkBlue);
+    /* margin-inline-end: .25rem; */
+    width: 2.75rem;
+    height: 2.75rem;
 }
 
 .submit {
     color: var(--white);
     background-color: var(--orange);
+    width: 100%
 }
 
 /* Thank you Component style */
