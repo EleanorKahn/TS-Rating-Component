@@ -21,18 +21,25 @@ html {
 body {
     font-size: 15px;
     display: grid;
-    place-content: center;
+    justify-content: center;
     font-family: 'Overpass', 'sans-serif';
 }
 
 body .container {
     background: linear-gradient(var(--darkBlue), var(--veryDarkBlue));
+    vertical-align: center;
 }
 
-/* Rating Component style */
+p {
+    color: var(--lightGrey);
+}
+
 h2 {
     color: var(--white);
 }
+
+/* Rating Component style */
+
 .rating-paragraph {
     color: var(--lightGrey);
 }
@@ -51,6 +58,23 @@ h2 {
 .submit {
     color: var(--white);
     background-color: var(--orange);
+}
+
+/* Thank you Component style */
+
+h3 {
+    color: var(--orange);
+    font-weight: normal;
+    background-color: var(--darkBlue);
+}
+
+/* Footer Component styles */
+footer {
+    color: var(--white);
+    position: fixed;
+    bottom: 0;
+    /* should center it, just a bandaid for now */
+    right: 35%;
 }
 
 
