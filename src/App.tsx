@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import FooterComponent from './components/FooterComponent';
 import ThankYouComponent from './components/ThankYouComponent';
 import RatingComponent from './components/RatingComponent';
-import './css/App.css';
+//import './css/App.css';
 
 function App() {
 
