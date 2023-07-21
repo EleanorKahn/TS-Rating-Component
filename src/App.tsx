@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import FooterComponent from './components/FooterComponent';
 import ThankYouComponent from './components/ThankYouComponent';
 import RatingComponent from './components/RatingComponent';
-//import './css/App.css';
+import './css/style.css';
 
 function App() {
 
@@ -15,7 +15,7 @@ function App() {
 
   return (
     <div className="App">
-      <div>
+      <div className='container'>
         {!submit 
           ? <RatingComponent setSubmit={setSubmit} setRating={setRating} />
           : <ThankYouComponent rating={rating} />
