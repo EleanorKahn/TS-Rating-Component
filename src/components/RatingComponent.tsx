@@ -30,7 +30,7 @@ const RatingComponent = (props: { setSubmit: Function, setRating: Function }) =>
             type='submit' 
             onClick={() => props.setSubmit(true)}
         >
-            Submit
+            SUBMIT
         </button>
     </div>
   );
