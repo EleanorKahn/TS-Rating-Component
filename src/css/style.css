@@ -55,7 +55,7 @@ button {
     background-color: aliceblue;
 } */
 
-img {
+.star {
     padding: 1rem;
     border-radius: 30px;
     background-color: var(--darkBlue);
@@ -83,11 +83,35 @@ img {
     height: 2.75rem;
 }
 
+.rating-options button:hover,
+.rating-options button:focus {
+    color: var(--white);
+    background-color: var(--mediumGrey);
+    cursor: pointer;
+}
+
+.rating-options button:active {
+    color: var(--white);
+    background-color: var(--orange);
+    cursor: pointer;
+}
+
 .submit {
     color: var(--white);
     background-color: var(--orange);
     width: 100%;
     letter-spacing: .1rem;
+}
+
+.submit:hover,
+.submit:focus {
+    cursor: pointer;
+}
+
+.submit:active {
+    color: var(--orange);
+    background-color: var(--white);
+    cursor: pointer;
 }
 
 
