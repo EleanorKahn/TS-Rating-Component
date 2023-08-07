@@ -2,7 +2,7 @@ import React from 'react';
 
 const ThankYouComponent = (props: { rating: number }) => {
   return (
-    <div>
+    <div className='thank-you-container'>
       <img src='/images/illustration-thank-you.svg' alt='a robot printing something THINK OF A BETTER ALT'></img>
         <h3 className='user-rating'>You selected {props.rating} out of 5</h3>
         <h2 className='thank-you'>Thank you!</h2>
