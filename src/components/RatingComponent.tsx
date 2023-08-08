@@ -3,7 +3,7 @@ import React from 'react';
 
 const RatingComponent = (props: { setSubmit: Function, setRating: Function }) => {
   return (
-    <div>
+    <div className='rating-container'>
         <img src='/images/icon-star.svg' alt='small yellow star' className='star'></img> 
         {/* <div className='star'></div> */}
         <h2 className='rating-title'>How did we do?</h2>
