@@ -23,6 +23,8 @@ body {
     display: grid;
     place-items: center;
     font-family: 'Overpass', 'sans-serif';
+    /* bandaid, but if at 100vh, a scrollbar becomes visible - investigate */
+    height: 90vh;
 }
 
 body .container {
@@ -166,10 +168,11 @@ h3 {
 /* Footer Component styles */
 footer {
     color: var(--white);
+    justify-content: center;
     position: fixed;
     bottom: 0;
     /* should center it, just a bandaid for now */
-    right: 35%;
+    right: 50%;
 }
 
 
