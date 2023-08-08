@@ -60,6 +60,7 @@ button {
 
 .rating-container {
     padding-inline: 1rem;
+    align-items: center;
 }
 
 .star {
@@ -139,7 +140,7 @@ button {
 .thank-you-container .user-rating {
     color: var(--orange);
     font-weight: normal;
-    font-size: 1rem;
+    font-size: .85rem;
     background-color: var(--darkBlue);
     border-radius: 30px;
     padding-inline: 1rem;
